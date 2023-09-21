@@ -1,4 +1,6 @@
 import bpy
+from .operators import submit_job
+from .panels import open_cue
 
 bl_info = {
     "name": "OpenCue Submit Add-on",
@@ -11,6 +13,8 @@ bl_info = {
 }
 
 classes = (
+    open_cue.OpenCuePanel,
+    submit_job.SubmitJobOperator
 )
 
 register, unregister = bpy.utils.register_classes_factory(classes)

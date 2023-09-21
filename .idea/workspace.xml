@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e363ae3-6d2a-4975-9b3f-8f3c69c12958" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="9e363ae3-6d2a-4975-9b3f-8f3c69c12958" name="Changes" comment="feat: Initial Add-on setup">
+      <change afterPath="$PROJECT_DIR$/Addon - OpenCue Submit Add-on/operators/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Addon - OpenCue Submit Add-on/panels/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Addon - OpenCue Submit Add-on/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Addon - OpenCue Submit Add-on/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,10 +62,47 @@
       <workItem from="1695126434756" duration="262000" />
       <workItem from="1695126709619" duration="609000" />
       <workItem from="1695130700055" duration="3000" />
+      <workItem from="1695132914936" duration="253000" />
+      <workItem from="1695194332203" duration="479000" />
+      <workItem from="1695290907349" duration="2098000" />
+      <workItem from="1695297657311" duration="38000" />
+      <workItem from="1695297705311" duration="2082000" />
+      <workItem from="1695305390653" duration="3000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: Additional instructions">
+      <option name="closed" value="true" />
+      <created>1695132930213</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695132930213</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: .gitignore file">
+      <option name="closed" value="true" />
+      <created>1695132966068</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695132966068</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: Initial Add-on setup">
+      <option name="closed" value="true" />
+      <created>1695132988791</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695132988791</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Additional instructions" />
+    <MESSAGE value="feat: .gitignore file" />
+    <MESSAGE value="feat: Initial Add-on setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Initial Add-on setup" />
   </component>
 </project>
