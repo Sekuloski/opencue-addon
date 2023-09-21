@@ -17,4 +17,34 @@ classes = (
     submit_job.SubmitJobOperator
 )
 
-register, unregister = bpy.utils.register_classes_factory(classes)
+
+def register():
+    bpy.utils.register_class(open_cue.OpenCuePanel)
+    bpy.utils.register_class(submit_job.SubmitJobOperator)
+
+    bpy.types.Scene.job_name = bpy.props.StringProperty(
+        name="Job name",
+        description="Enter some text",
+        default=""
+    )
+
+    bpy.types.Scene.usr_name = bpy.props.StringProperty(
+        name="User name",
+        description="Enter some text",
+        default=""
+    )
+
+    bpy.types.Scene.layer_name = bpy.props.StringProperty(
+        name="Layer name",
+        description="Enter some text",
+        default=""
+    )
+
+    bpy.types.Scene.shot_name = bpy.props.StringProperty(
+        name="Shot name",
+        description="Enter some text",
+        default=""
+    )
+
+
+_, unregister = bpy.utils.register_classes_factory(classes)

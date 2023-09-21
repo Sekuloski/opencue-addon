@@ -5,44 +5,37 @@ class SubmitJobOperator(bpy.types.Operator):
     bl_idname = "submit.job"
     bl_label = "Submit Job"
 
-    job_name = bpy.props.StringProperty(
-        name="Job name",
-        description="Enter some text",
-        default=""
-    )
 
-    usr_name = bpy.props.StringProperty(
-        name="User name",
-        description="Enter some text",
-        default=""
-    )
-
-    layer_name = bpy.props.StringProperty(
-        name="Layer name",
-        description="Enter some text",
-        default=""
-    )
-
-    shot_name = bpy.props.StringProperty(
-        name="Shot name",
-        description="Enter some text",
-        default=""
-    )
+class SubmitJob(bpy.types.Operator):
+    bl_idname = "object.submit_job"
+    bl_label = "My Operator"
 
     def execute(self, context):
-        print(self.usr_name)
+        layerData = {
+            'name': context.scene.layer_name,
+            'layerType': 'Blender',
+            'cmd': {
+                'blenderFile': '/home/nuwan/Documents/Projects/OpenCue/blender-demos/test/test.blend',
+                'outputPath': '',
+                'outputFormat': 'PNG'
+            },
+            'layerRange': '1',
+            'chunk': '1',
+            'cores': '0',
+            'env': {},
+            'services': [],
+            'limits': [],
+            'dependType': '',
+            'dependsOne': None
+        }
 
-        return {'FINISHED'}
+        jobData = {
+            'name': context.scene.job_name,
+            'username': context.scene.usr_name,
+            'show': "testing",
+            'shot': context.scene.shot_name,
+            'layers': layerData
+        }
 
-    def invoke(self, context, event):
-        wm = context.window_manager
-        return wm.invoke_props_dialog(self)
-
-    def draw(self, context):
-        layout = self.layout
-
-        col = layout.column()
-        col.prop(context, "job_name")
-        col.prop(context, "usr_name")
-        col.prop(context, "layer_name")
-        col.prop(context, "shot_name")
+        # from . import Submission
+        # Submission.submit(jobData)
